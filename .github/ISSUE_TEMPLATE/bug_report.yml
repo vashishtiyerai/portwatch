@@ -1,0 +1,42 @@
+name: Bug Report
+description: File a bug report or error encountered while using PortWatch
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please provide as much detail as possible to help us diagnose the problem.
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what went wrong.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating System & Architecture
+      placeholder: e.g. macOS Sonoma 14.4 (Apple Silicon) or Windows 11 x64 or Ubuntu 22.04 LTS
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Run 'portwatch find 3000'
+        2. Process shows 'Unknown'
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: doctor-output
+    attributes:
+      label: PortWatch Doctor Output
+      description: Please run `portwatch doctor` and paste the sanitized diagnostic output here.
+      render: shell
+    validations:
+      required: false

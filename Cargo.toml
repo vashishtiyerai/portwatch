@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/portwatch-core",
+    "crates/portwatch-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["PortWatch Contributors"]
+license = "MIT"
+repository = "https://github.com/portwatch/portwatch"
+readme = "README.md"
+description = "Know what's using your ports. Cross-platform developer utility."

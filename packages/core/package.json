@@ -1,0 +1,18 @@
+{
+  "name": "@portwatch/core",
+  "version": "0.1.0",
+  "description": "PortWatch core system layer and cross-platform port & process providers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["port", "process", "netstat", "lsof", "cross-platform"],
+  "author": "PortWatch Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

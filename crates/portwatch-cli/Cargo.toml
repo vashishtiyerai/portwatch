@@ -1,0 +1,13 @@
+[package]
+name = "portwatch-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["PortWatch Contributors"]
+license = "MIT"
+description = "Fast, cross-platform CLI developer utility for port and process discovery"
+
+[dependencies]
+portwatch-core = { path = "../portwatch-core" }
+serde_json = "1.0"
+clap = { version = "4.4", features = ["derive"] }
+colored = "2.1"

@@ -1,0 +1,21 @@
+{
+  "name": "@portwatch/server",
+  "version": "0.1.0",
+  "description": "PortWatch local API and SSE server for Web and Desktop GUI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["portwatch", "server", "api", "sse"],
+  "author": "PortWatch Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@portwatch/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

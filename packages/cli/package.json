@@ -1,0 +1,24 @@
+{
+  "name": "portwatch",
+  "version": "0.1.0",
+  "description": "PortWatch CLI — Know what's using your ports.",
+  "bin": {
+    "portwatch": "./bin/portwatch.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node bin/portwatch.js"
+  },
+  "keywords": ["portwatch", "port", "process", "developer-tools", "cli"],
+  "author": "PortWatch Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@portwatch/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
